@@ -140,4 +140,15 @@ iOSInjectionProject/
 /*.gcno
 **/xcshareddata/WorkspaceSettings.xcsettings
 
+### Secrets ###
+
+# Firebase config
+GoogleService-Info.plist
+
+# API Keys
+Secrets.xcconfig
+
+# Environment Variables
+.env
+
 # End of https://www.toptal.com/developers/gitignore/api/xcode,swift,macos,firebase
