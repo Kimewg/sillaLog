@@ -20,7 +20,7 @@
 		C66D6D452FD7F89100EC3B4A /* Exceptions for "sillalog" folder in "sillalog" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				Info.plist,
+				Resources/Info.plist,
 			);
 			target = C66D6D2F2FD7F89000EC3B4A /* sillalog */;
 		};
