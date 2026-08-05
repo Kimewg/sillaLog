@@ -10,6 +10,11 @@
 		C65275252FDA9716003F363E /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = C65275242FDA9716003F363E /* FirebaseAnalytics */; };
 		C65275272FDA9716003F363E /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = C65275262FDA9716003F363E /* FirebaseAuth */; };
 		C65275292FDA9716003F363E /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = C65275282FDA9716003F363E /* FirebaseFirestore */; };
+		C65276152FDAAB1E003F363E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = C65276142FDAAB1E003F363E /* SnapKit */; };
+		C65276182FDAAB50003F363E /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = C65276172FDAAB50003F363E /* RxCocoa */; };
+		C652761A2FDAAB50003F363E /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = C65276192FDAAB50003F363E /* RxRelay */; };
+		C652761C2FDAAB50003F363E /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C652761B2FDAAB50003F363E /* RxSwift */; };
+		C65276682FDAAEB4003F363E /* NMapsMap in Frameworks */ = {isa = PBXBuildFile; productRef = C65276672FDAAEB4003F363E /* NMapsMap */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,9 +47,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C652761A2FDAAB50003F363E /* RxRelay in Frameworks */,
 				C65275252FDA9716003F363E /* FirebaseAnalytics in Frameworks */,
+				C65276152FDAAB1E003F363E /* SnapKit in Frameworks */,
+				C65276182FDAAB50003F363E /* RxCocoa in Frameworks */,
 				C65275272FDA9716003F363E /* FirebaseAuth in Frameworks */,
+				C65276682FDAAEB4003F363E /* NMapsMap in Frameworks */,
 				C65275292FDA9716003F363E /* FirebaseFirestore in Frameworks */,
+				C652761C2FDAAB50003F363E /* RxSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +100,11 @@
 				C65275242FDA9716003F363E /* FirebaseAnalytics */,
 				C65275262FDA9716003F363E /* FirebaseAuth */,
 				C65275282FDA9716003F363E /* FirebaseFirestore */,
+				C65276142FDAAB1E003F363E /* SnapKit */,
+				C65276172FDAAB50003F363E /* RxCocoa */,
+				C65276192FDAAB50003F363E /* RxRelay */,
+				C652761B2FDAAB50003F363E /* RxSwift */,
+				C65276672FDAAEB4003F363E /* NMapsMap */,
 			);
 			productName = sillalog;
 			productReference = C66D6D302FD7F89000EC3B4A /* sillalog.app */;
@@ -121,6 +136,9 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				C65275232FDA9716003F363E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				C65276132FDAAB1E003F363E /* XCRemoteSwiftPackageReference "SnapKit" */,
+				C65276162FDAAB50003F363E /* XCRemoteSwiftPackageReference "RxSwift" */,
+				C65276662FDAAEB4003F363E /* XCRemoteSwiftPackageReference "SPM-NMapsMap" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = C66D6D312FD7F89000EC3B4A /* Products */;
@@ -155,6 +173,8 @@
 /* Begin XCBuildConfiguration section */
 		C66D6D472FD7F89100EC3B4A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = C66D6D322FD7F89000EC3B4A /* sillalog */;
+			baseConfigurationReferenceRelativePath = Config/Secrets.xcconfig;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -182,6 +202,8 @@
 		};
 		C66D6D482FD7F89100EC3B4A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = C66D6D322FD7F89000EC3B4A /* sillalog */;
+			baseConfigurationReferenceRelativePath = Config/Secrets.xcconfig;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -358,6 +380,30 @@
 				minimumVersion = 12.14.0;
 			};
 		};
+		C65276132FDAAB1E003F363E /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+		C65276162FDAAB50003F363E /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.10.2;
+			};
+		};
+		C65276662FDAAEB4003F363E /* XCRemoteSwiftPackageReference "SPM-NMapsMap" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/navermaps/SPM-NMapsMap";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.23.2;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -375,6 +421,31 @@
 			isa = XCSwiftPackageProductDependency;
 			package = C65275232FDA9716003F363E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseFirestore;
+		};
+		C65276142FDAAB1E003F363E /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C65276132FDAAB1E003F363E /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		C65276172FDAAB50003F363E /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C65276162FDAAB50003F363E /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		C65276192FDAAB50003F363E /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C65276162FDAAB50003F363E /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		C652761B2FDAAB50003F363E /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C65276162FDAAB50003F363E /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		C65276672FDAAEB4003F363E /* NMapsMap */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C65276662FDAAEB4003F363E /* XCRemoteSwiftPackageReference "SPM-NMapsMap" */;
+			productName = NMapsMap;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

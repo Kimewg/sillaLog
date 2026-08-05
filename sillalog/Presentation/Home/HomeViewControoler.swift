@@ -1,12 +1,12 @@
 //
-//  MyPageViewController.swift
+//  Untitled.swift
 //  sillalog
 //
 //  Created by 김은서 on 6/11/26.
 //
 import UIKit
 
-class MyPageViewController:UIViewController{
+class HomeViewController:UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
