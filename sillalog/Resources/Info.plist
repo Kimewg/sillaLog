@@ -4,6 +4,8 @@
 <dict>
 	<key>NMFClientId</key>
 	<string>$(NAVER_MAP_CLIENT_ID)</string>
+	<key>OPEN_API_KEY</key>
+	<string>$(OPEN_API_KEY)</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

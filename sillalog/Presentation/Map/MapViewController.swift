@@ -12,11 +12,13 @@ import NMapsMap
 
 class MapViewController: UIViewController{
     
+    private let viewModel = MapViewModel()
     private let mapView = NMFMapView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        viewModel.fetchTourList()
         configureUI()
     }
     
